@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Scroll Progress | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>html { scroll-behavior: smooth; }</style>
     <style>
-        /* Suaviza a rolagem */
         html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-purple-200 selection:text-purple-900">
+
+    <div class="fixed top-0 left-0 w-full h-1.5 z-50 bg-slate-200/50 backdrop-blur-sm">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-600 via-violet-600 to-fuchsia-600 w-0 transition-all duration-100 ease-out shadow-[0_2px_10px_rgba(124,58,237,0.4)]"></div>
+    </div>
 
     <header class="p-6 text-center">
         <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-2">
@@ -44,6 +48,5 @@
             &copy; 2026 Desenvolvido para fins educacionais.
         </footer>
     </main>
-
 </body>
 </html>
